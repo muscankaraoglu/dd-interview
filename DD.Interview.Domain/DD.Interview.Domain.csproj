@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Users\" />
+    <None Remove="Microsoft.AspNetCore.Identity" />
+    <None Remove="Microsoft.Extensions.Identity.Core" />
+    <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Users\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="7.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.editorconfig" />
+  </ItemGroup>
+</Project>
